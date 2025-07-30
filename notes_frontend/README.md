@@ -15,8 +15,14 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in development mode.\
+Runs the app in development mode.  
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+### API Proxy and Backend Setup
+
+- By default, the app is configured to proxy API requests (`/api/`) to the backend running locally at `http://localhost:8000`.
+- If your backend is running elsewhere, adjust `src/setupProxy.js` accordingly.
+- For production deployment, set the correct backend URL for your API calls.
 
 ### `npm test`
 
